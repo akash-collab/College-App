@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">College App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+
+    <string name="about_college">Techno India University, located in Kolkata, India, is a prominent private university established in 2012. It offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines including engineering, management, sciences, humanities, and law. Known for its robust academic curriculum and modern infrastructure, the university aims to provide quality education and foster research and innovation. The institution is affiliated with Techno India Group, a large educational conglomerate in India. Techno India University is committed to producing skilled professionals and contributing to societal development through academic excellence.</string>
+
+    <string name="about_mech">Mechanical engineering is a versatile branch of engineering that involves the design, analysis, and manufacturing of mechanical systems and devices. It encompasses various disciplines such as thermodynamics, materials science, structural analysis, and fluid mechanics. Mechanical engineers work on projects ranging from small components to large industrial machinery, contributing to advancements in energy, transportation, and automation.</string>
+    <string-array name="theme">
+        <item>System Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+
+    </string-array>
+</resources>

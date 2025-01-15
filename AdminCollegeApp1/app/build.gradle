@@ -1,0 +1,85 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.admincollegeapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.admincollegeapp"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.firebase.database
+    implementation libs.firebase.storage
+    implementation libs.firebase.firestore
+    implementation 'junit:junit:4.12'
+    implementation libs.core
+    implementation libs.espresso.intents
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation platform('com.google.firebase:firebase-bom:32.8.0')
+    implementation fileTree(dir: "libs", include: ["*-jar"])
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.navigation:navigation-fragment:2.7.2'
+    implementation 'androidx.navigation:navigation-ui:2.7.2'
+    implementation 'com.google.android.material:material:1.11.0-rc01'
+    implementation platform('com.google.firebase:firebase-bom:31.0.3')
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-appcheck'
+    implementation 'com.google.firebase:firebase-appcheck-playintegrity'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:3.11.2'
+    testImplementation 'androidx.test.ext:junit:1.1.3'
+    testImplementation 'androidx.test:core:1.4.0'
+    testImplementation 'org.robolectric:robolectric:4.6'
+
+    // JUnit for testing
+    testImplementation 'junit:junit:4.13.2'
+
+    // Mockito for mocking
+    testImplementation 'org.mockito:mockito-core:5.0.0'
+    testImplementation 'org.mockito:mockito-inline:4.8.1'
+
+    testImplementation 'org.robolectric:robolectric:4.9'
+
+    testImplementation 'androidx.test:core:1.4.0'
+
+    testImplementation 'androidx.test.ext:junit:1.1.3'
+
+    testImplementation 'com.google.firebase:firebase-auth:21.0.1'
+    testImplementation 'com.google.firebase:firebase-database:20.0.1'
+
+
+}
